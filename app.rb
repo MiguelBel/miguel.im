@@ -1,7 +1,8 @@
-require 'sinatra/base'
+require "sinatra"
+require "erb"
 
 class App < Sinatra::Base
   get '/' do
-    "<p>This is <i>dynamic</i> content served via unicorn: #{rand(36**6).to_s(36)}"
+    erb :index
   end
 end

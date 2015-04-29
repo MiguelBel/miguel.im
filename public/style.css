@@ -1,0 +1,81 @@
+body{
+  background-color: #FFFFFF;
+  padding:40px 0 0 30px;
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  line-height: 35px;
+  font-weight: 300;
+}
+
+a{
+  font-weight: 700;
+  color: #444e5c;
+  text-decoration: none;
+  border-bottom: 1px solid #3498db;
+  padding-bottom: 1px;
+}
+
+li{
+  list-style: none;
+}
+
+li:before {
+    content: "•  ";
+    color: #3498db; /* or whatever color you prefer */
+}
+
+strong{
+  color:#3498db;
+}
+
+.presentation{
+  padding-bottom: 30px;
+  border-bottom:3px solid #3498db;
+}
+
+.find-me{
+  margin-top:30px;
+}
+
+#heart {
+    position: fixed;
+    bottom:1%;
+    right:1%;
+    width: 20px;
+    height: 20px;
+}
+#heart:before,
+#heart:after {
+    position: absolute;
+    content: "";
+    left: 10px;
+    top: 0;
+    width: 10px;
+    height: 15px;
+    background: red;
+    -moz-border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+       -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+         -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+}
+#heart:after {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+       -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+         -o-transform-origin: 100% 100%;
+            transform-origin :100% 100%;
+}
